@@ -23,4 +23,10 @@ defmodule PoeticWeb.Router do
   # scope "/api", PoeticWeb do
   #   pipe_through :api
   # end
+
+  scope "/", PoeticWeb do
+    pipe_through :browser
+
+    resources "/uploads", UploadController, only: [:index, :new, :create, :show]
+  end
 end
