@@ -77,4 +77,4 @@ config :phoenix, :plug_init_mode, :runtime
 
 # path of the upload directory
 config :poetic,
-   uploads_directory: "/Users/leonardo/uploads_dev"
+   uploads_directory: "/home/leonardo/uploads_dev"
